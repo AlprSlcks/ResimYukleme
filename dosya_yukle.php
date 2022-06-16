@@ -14,7 +14,7 @@ if ($_FILES["dosya"]) {
 
       $sonuc = move_uploaded_file($_FILES["dosya"]["tmp_name"], $yuklemeYeri);
 
-      echo $sonuc ? "Dosya başarıyla yüklendi linki: /dosyalar/dosyaadinigirin.png : "Hata oluştu";
+      echo $sonuc ? "Dosya başarıyla yüklendi" : "Hata oluştu";
 
   }
 
